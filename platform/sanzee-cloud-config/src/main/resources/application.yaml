@@ -1,0 +1,39 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: sanzee-cloud-config
+  profiles:
+    active: dev # dev, staging, prod
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/lethanhsang123/sanzee-coud-config
+          username: lethanhsang123
+          password: lethanhsang14082001
+          clone-on-start: true # Clone repo on server start
+          label: ${spring.profiles.active}  # Use the active profile as the branch name
+          skip-ssl-validation: true
+          timeout: 5
+          default-label: main # Default branch to use if not specified
+          repos:
+            default:
+              pattern: "default"    # Matches any environment
+              uri: https://github.com/lethanhsang123/sanzee-coud-config
+              basedir: repos/default
+            develop:
+              pattern: "dev"        # Matches "dev" profile
+              uri: https://github.com/lethanhsang123/sanzee-coud-config
+              basedir: repos/develop
+              label: develop        # Use "develop" branch for "dev" profile
+            staging:
+              pattern: "staging"    # Matches "staging" profile
+              uri: https://github.com/lethanhsang123/sanzee-coud-config
+              basedir: repos/staging
+              label: staging        # Use "staging" branch for "staging" profile
+            production:
+              pattern: "prod"       # Matches "prod" profile
+              uri: https://github.com/lethanhsang123/sanzee-coud-config
+              basedir: repos/production
+              label: main         # Use "master" or "main" branch for "prod" profile
