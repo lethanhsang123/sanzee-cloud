@@ -17,8 +17,11 @@ spring:
       transport:
         dashboard: 127.0.0.1:8081
         port: 8719
-  discovery:
-    enabled: true
+      datasource:
+        config:
+        type: springCloudConfig
+        groupId: sentinel
+        dataId: sentinel-rules.yml  # The file name in the config repository
 management:
   endpoints:
     web:
