@@ -6,12 +6,24 @@
 ##      label: main                # Optional: Branch or label in the Config Server's Git repository
 
 server:
-  port: 8847
+  port: 8675
 spring:
   cloud:
     zookeeper:
       connect-string: 127.0.0.1:21811,127.0.0.1:21812,127.0.0.1:21813
       discovery:
         enabled: true
-#  discovery:
-#    enabled: true
+    sentinel:
+      transport:
+        dashboard: 127.0.0.1:8081
+        port: 8719
+  discovery:
+    enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+logging:
+  level:
+    root: debug

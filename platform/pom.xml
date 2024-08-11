@@ -20,5 +20,6 @@
     <modules>
         <module>sanzee-cloud-gateway</module>
         <module>sanzee-cloud-config</module>
+        <module>sanzee-cloud-sentinel</module>
     </modules>
 </project>

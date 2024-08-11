@@ -1,0 +1,6 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8888 # URL of the Config Server
+      profile: staging               # Environment profile (e.g., dev, prod, staging)
+#      label: main                # Optional: Branch or label in the Config Server's Git repository
