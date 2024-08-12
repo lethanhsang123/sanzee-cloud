@@ -1,7 +1,8 @@
 spring:
   application:
-    name: @artifactId@  #Get value in POM file
+#    name: @artifactId@  #Get value in POM file
+    name: sanzee-cloud-gateway  #Get value in POM file
   profiles:
-    active: prod
+    active: dev
   config:
     import: "optional:configserver:"

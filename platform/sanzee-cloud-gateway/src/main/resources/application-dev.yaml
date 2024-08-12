@@ -11,7 +11,24 @@ spring:
   cloud:
     zookeeper:
       connect-string: 127.0.0.1:21811,127.0.0.1:21812,127.0.0.1:21813
+    gateway:
       discovery:
-        enabled: true
-#  discovery:
-#    enabled: true
+        locator:
+          enabled: true
+          lower-case-service-id: true
+          filters:
+            - StripPrefix=1
+    loadbalancer:
+        retry:
+          enabled: true
+
+sanzee-cloud:
+  gateway:
+    whiteList:
+      - "/oauth2/**"
+      - "/v3/api-docs/**"
+      - "/openapi*"
+      - "/open/**"
+springdoc:
+  api-docs:
+    enabled: true
