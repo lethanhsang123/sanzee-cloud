@@ -1,16 +1,10 @@
-#spring:
-#  cloud:
-#    config:
-#      uri: http://localhost:8888 # URL of the Config Server
-#      profile: dev               # Environment profile (e.g., dev, prod, staging)
-##      label: main                # Optional: Branch or label in the Config Server's Git repository
-
 server:
   port: 8847
 spring:
   cloud:
-    zookeeper:
-      connect-string: 127.0.0.1:21811,127.0.0.1:21812,127.0.0.1:21813
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
     gateway:
       discovery:
         locator:
@@ -19,9 +13,18 @@ spring:
           filters:
             - StripPrefix=1
     loadbalancer:
-        retry:
-          enabled: true
-
+      retry:
+        enabled: true
+      nacos:
+        enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
 sanzee-cloud:
   gateway:
     whiteList:

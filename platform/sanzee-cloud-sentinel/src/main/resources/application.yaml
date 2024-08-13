@@ -1,7 +1,0 @@
-spring:
-  application:
-    name: @artifactId@  #Get value in POM file
-  profiles:
-    active: prod
-  config:
-    import: "optional:configserver:"
