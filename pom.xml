@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>vi.legend.sanzee</groupId>
 		<artifactId>dependencies</artifactId>
-		<version>3.3.2.1</version>
+		<version>3.3.2</version>
 		<relativePath>dependencies/pom.xml</relativePath>
 	</parent>
 
@@ -14,10 +14,6 @@
 	<packaging>pom</packaging>
 	<name>sanzee-cloud</name>
 	<description>Sanzee Cloud</description>
-
-	<properties>
-		<java.version>21</java.version>
-	</properties>
 
 	<build>
 		<plugins>
