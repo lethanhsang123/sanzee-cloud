@@ -1,8 +1,7 @@
 spring:
   application:
-    name: @artifactId@  #Get value in POM file
+    name: @artifactId@
   profiles:
     active: dev
   config:
     import: optional:nacos:nacos
-

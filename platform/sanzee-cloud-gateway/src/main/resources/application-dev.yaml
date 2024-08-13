@@ -22,6 +22,9 @@ management:
     web:
       exposure:
         include: "*"
+  endpoint:
+    health:
+      show-details: always
 sanzee-cloud:
   gateway:
     whiteList:

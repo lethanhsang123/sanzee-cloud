@@ -12,5 +12,6 @@
 
     <modules>
         <module>sanzee-cloud-gateway</module>
+        <module>sanzee-cloud-monitor</module>
     </modules>
 </project>
