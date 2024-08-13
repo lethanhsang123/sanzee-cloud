@@ -4,22 +4,13 @@
     <parent>
         <groupId>vi.legend.sanzee</groupId>
         <artifactId>sanzee-cloud</artifactId>
-        <version>3.3.2</version>
+        <version>3.3.2.1</version>
     </parent>
     <artifactId>platform</artifactId>
     <packaging>pom</packaging>
     <name>Sanzee Cloud Platform</name>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-    </dependencies>
-
     <modules>
         <module>sanzee-cloud-gateway</module>
-        <module>sanzee-cloud-config</module>
-        <module>sanzee-cloud-sentinel</module>
     </modules>
 </project>
