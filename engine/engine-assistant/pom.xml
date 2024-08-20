@@ -1,0 +1,19 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>vi.legend.engine</groupId>
+        <artifactId>sanzee-engine</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>engine-assistant</artifactId>
+    <packaging>pom</packaging>
+    <name>Sanzee Engine Assistant</name>
+
+    <modules>
+        <module>asisstant-spring-boot-starter</module>
+        <module>assistant-core</module>
+        <module>assistant-definition</module>
+    </modules>
+
+</project>

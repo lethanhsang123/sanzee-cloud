@@ -1,0 +1,141 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>3.3.2</version>
+    <relativePath/>
+  </parent>
+
+  <groupId>vi.legend.engine</groupId>
+  <version>1.0-SNAPSHOT</version>
+  <artifactId>sanzee-engine</artifactId>
+  <name>Sanzee Engine</name>
+  <packaging>pom</packaging>
+
+  <properties>
+    <java.version>21</java.version>
+    <spring.cloud.version>2023.0.3</spring.cloud.version>
+    <spring.cloud.alibaba.version>2023.0.1.2</spring.cloud.alibaba.version>
+    <spring-boot-dependencies.version>3.3.2</spring-boot-dependencies.version>
+    <springdoc.version>2.6.0</springdoc.version>
+    <antisamy.version>1.7.6</antisamy.version>
+    <commons-collections4.version>4.4</commons-collections4.version>
+    <commons-text.version>1.12.0</commons-text.version>
+    <commons-io.version>2.16.1</commons-io.version>
+    <just-auth.verison>1.16.6</just-auth.verison>
+    <guava.version>33.2.1-jre</guava.version>
+    <hutool.version>6.0.0-M14</hutool.version>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <version>${spring-boot-dependencies.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-dependencies</artifactId>
+        <version>${spring.cloud.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>com.alibaba.cloud</groupId>
+        <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+        <version>${spring.cloud.alibaba.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springdoc</groupId>
+        <artifactId>springdoc-openapi</artifactId>
+        <version>${springdoc.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.owasp.antisamy</groupId>
+        <artifactId>antisamy</artifactId>
+        <version>${antisamy.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-collections4</artifactId>
+        <version>${commons-collections4.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>${commons-io.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-text</artifactId>
+        <version>${commons-text.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>me.zhyd.oauth</groupId>
+        <artifactId>JustAuth</artifactId>
+        <version>${just-auth.verison}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>${guava.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.dromara.hutool</groupId>
+        <artifactId>hutool-all</artifactId>
+        <version>${hutool.version}</version>
+      </dependency>
+
+    </dependencies>
+  </dependencyManagement>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <skipTests>false</skipTests>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <modules>
+    <module>engine-assistant</module>
+    <module>engine-cache</module>
+    <module>engine-data</module>
+    <module>engine-rest</module>
+    <module>engine-captcha</module>
+    <module>engine-message</module>
+    <module>engine-oauth2</module>
+    <module>engine-facility</module>
+    <module>engine-supplier</module>
+    <module>engine-access</module>
+  </modules>
+
+</project>

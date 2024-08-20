@@ -12,7 +12,7 @@
 
 	<artifactId>sanzee-cloud</artifactId>
 	<packaging>pom</packaging>
-	<name>sanzee-cloud</name>
+	<name>Sanzee Cloud</name>
 	<description>Sanzee Cloud</description>
 
 	<build>

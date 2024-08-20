@@ -2,25 +2,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>vi.legend.sanzee</groupId>
-        <artifactId>modules</artifactId>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.3.2</version>
+        <relativePath/>
     </parent>
+
     <artifactId>sanzee-module-common</artifactId>
-    <name>Sanzee Module Common</name>
-
-    <properties>
-        <springdoc-openapi-starter-ui.version>2.6.0</springdoc-openapi-starter-ui.version>
-    </properties>
-
-    <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-starter-webmvc-ui -->
-        <dependency>
-            <groupId>org.springdoc</groupId>
-            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-            <version>${springdoc-openapi-starter-ui.version}</version>
-        </dependency>
-
-    </dependencies>
-
+    <packaging>pom</packaging>
+    <name>Sanzee Cloud Module Common</name>
 </project>
