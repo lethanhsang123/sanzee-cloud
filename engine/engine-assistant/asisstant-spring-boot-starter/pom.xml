@@ -8,4 +8,15 @@
     </parent>
     <artifactId>asisstant-spring-boot-starter</artifactId>
     <name>Sanzee Engine Asisstant Spring boot starter</name>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>vi.legend.engine</groupId>
+            <artifactId>assistant-core</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+    </dependencies>
+
 </project>
