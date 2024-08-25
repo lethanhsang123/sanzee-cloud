@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+vi.legend.assistant.starter.autoconfigure.AssistantAutoConfiguration, \
+vi.legend.assistant.starter.autoconfigure.Jackson2AutoConfiguration

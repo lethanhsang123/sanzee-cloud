@@ -53,7 +53,7 @@ public class GatewayCorsConfiguration {
     }
 
     @Configuration(proxyBeanMethods = false)
-    @ConditionalOnSwaggerEnabled
+//    @ConditionalOnSwaggerEnabled
     static class GatewaySwaggerConfiguration {
 
         @Bean
