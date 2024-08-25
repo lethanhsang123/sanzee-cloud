@@ -12,6 +12,9 @@
     <name>Sanzee Cloud Modules</name>
     <modules>
         <module>sanzee-module-common</module>
+        <module>sanzee-module-metadata</module>
+        <module>sanzee-module-social</module>
+        <module>sanzee-module-strategy</module>
     </modules>
 
 </project>

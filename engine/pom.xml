@@ -28,6 +28,10 @@
     <just-auth.verison>1.16.6</just-auth.verison>
     <guava.version>33.2.1-jre</guava.version>
     <hutool.version>6.0.0-M14</hutool.version>
+    <zxing.version>3.5.3</zxing.version>
+    <okhttps.version>4.0.2</okhttps.version>
+    <bcprov-jdk18on.version>1.78.1</bcprov-jdk18on.version>
+    <bcpkix-jdk18on.version>1.78.1</bcpkix-jdk18on.version>
   </properties>
 
   <dependencyManagement>
@@ -104,6 +108,36 @@
         <groupId>org.dromara.hutool</groupId>
         <artifactId>hutool-all</artifactId>
         <version>${hutool.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.google.zxing</groupId>
+        <artifactId>core</artifactId>
+        <version>${zxing.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>cn.zhxu</groupId>
+        <artifactId>okhttps-jackson</artifactId>
+        <version>${okhttps.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>cn.zhxu</groupId>
+        <artifactId>okhttps-gson</artifactId>
+        <version>${okhttps.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bouncycastle</groupId>
+        <artifactId>bcprov-jdk18on</artifactId>
+        <version>${bcprov-jdk18on.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bouncycastle</groupId>
+        <artifactId>bcpkix-jdk18on</artifactId>
+        <version>${bcpkix-jdk18on.version}</version>
       </dependency>
 
     </dependencies>

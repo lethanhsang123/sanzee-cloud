@@ -13,5 +13,8 @@
     <modules>
         <module>sanzee-cloud-gateway</module>
         <module>sanzee-cloud-monitor</module>
+        <module>sanzee-cloud-message</module>
+        <module>sanzee-cloud-uaa</module>
+        <module>sanzee-cloud-upms</module>
     </modules>
 </project>
