@@ -7,5 +7,14 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <artifactId>engine-facility</artifactId>
+    <packaging>pom</packaging>
     <name>Sanzee Engine Facility</name>
+
+    <modules>
+        <module>facility-core</module>
+        <module>facility-alibaba-spring-boot-starter</module>
+        <module>facility-tencent-spring-boot-starter</module>
+        <module>facility-gateway-spring-boot-starter</module>
+    </modules>
+
 </project>

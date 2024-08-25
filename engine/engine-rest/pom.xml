@@ -7,5 +7,14 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <artifactId>engine-rest</artifactId>
+    <packaging>pom</packaging>
     <name>Sanzee Engine Rest</name>
+    <modules>
+        <module>rest-core</module>
+        <module>rest-sdk-protect</module>
+        <module>rest-sdk-service</module>
+        <module>rest-sdk-condition</module>
+        <module>rest-spring-boot-starter</module>
+        <module>web-server-spring-boot-starter</module>
+    </modules>
 </project>

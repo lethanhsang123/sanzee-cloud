@@ -8,7 +8,7 @@
     </parent>
 
     <artifactId>sanzee-cloud-monitor</artifactId>
-    <name>Sanzee Cloud Monitor</name>
+    <name>Sanzee Cloud Platform Monitor</name>
 
     <properties>
         <spring-boot-admin-server.version>3.3.3</spring-boot-admin-server.version>

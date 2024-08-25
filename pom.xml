@@ -32,6 +32,8 @@
 		<module>dependencies</module>
 		<module>platform</module>
         <module>modules</module>
+        <module>packages</module>
+        <module>services</module>
     </modules>
 
 </project>

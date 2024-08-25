@@ -8,7 +8,7 @@
     </parent>
 
     <artifactId>sanzee-cloud-gateway</artifactId>
-    <name>Sanzee Cloud Gateway</name>
+    <name>Sanzee Cloud Platform Gateway</name>
 
     <properties>
         <springdoc-openapi-starter-webflux-ui.version>2.6.0</springdoc-openapi-starter-webflux-ui.version>
